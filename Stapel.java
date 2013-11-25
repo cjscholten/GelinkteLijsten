@@ -1,4 +1,4 @@
-package gelinkteLijsten;
+package GelinkteLijsten;
 
 
 /**
@@ -13,6 +13,12 @@ package gelinkteLijsten;
  * klasse niet voor.
  */
 public class Stapel {
+	GelinkteLijst lijst;
+	
+	public Stapel(){
+		lijst = new GelinkteLijst();
+	}
+	
 	/**
 	 * Zet een object boven op de stapel
 	 * @param object

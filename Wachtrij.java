@@ -1,4 +1,4 @@
-package gelinkteLijsten;
+package GelinkteLijsten;
 
 /**
  * Een wachtrij (queue) werkt via het 
@@ -6,7 +6,7 @@ package gelinkteLijsten;
  * aan de achterkant en worden verwijderd aan de voorkant.
  * 
  * In deze klasse implementeer je een Queue door alleen 
- * maar gebruik te maken van de opslag methode die de 
+ * maar gebruik te maken van de opslagmethode die de 
  * klasse GelinkteLijst je biedt. De Node komt niet voor in deze klasse!
  * 
  * In [Hubbard, hoofdstuk 6] wordt de Queue besproken.

@@ -1,4 +1,4 @@
-package gelinkteLijsten;
+package GelinkteLijsten;
 
 public class GelinkteLijst {
 	

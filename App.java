@@ -1,4 +1,4 @@
-package gelinkteLijsten;
+package GelinkteLijsten;
 
 /**
  * In deze opdracht verken je het generieke karakter van de gelinkte datastructuur.
