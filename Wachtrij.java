@@ -14,11 +14,11 @@ package GelinkteLijsten;
  * @author Youri 
  *
  */
-public class Wachtrij{
+public class Wachtrij {
 	
 	GelinkteLijst lijst;
 	
-	public Wachtrij(){
+	public Wachtrij() {
 		lijst = new GelinkteLijst();
 		
 	}
@@ -27,7 +27,7 @@ public class Wachtrij{
 	 * Zet iets in de wachtrij
 	 * aan de achterkant: FIFO
 	 */
-	void enqueue(Object o){
+	void enqueue(Object o) {
 		lijst.insertFirst(o); //bijvoorbeeld zo	
 	}
 	
@@ -35,19 +35,19 @@ public class Wachtrij{
 	 * Haal iets van de wachtrij
 	 * Aan de voorkant: FIFO
 	 */
-	void dequeue(){}
+	void dequeue() {}
 	
 	/**
 	 * Het aantal elementen in de wachtrij
 	 * @return
 	 */
-	int size(){return 0;}
+	int size() {return 0;}
 	
 	/**
 	 * Is de lijst leeg?
 	 * @return
 	 */
-	boolean isEmpty(){return false;}
+	boolean isEmpty() {return false;}
 	
 	/**
 	 * Bekijk het eerste element in de wachtrij, 
@@ -55,5 +55,5 @@ public class Wachtrij{
 	 * Note: het eerste element is als eerste toegevoegd.
 	 * @return
 	 */	
-	Object front(){return new Object();}
+	Object front() {return new Object();}
 }
