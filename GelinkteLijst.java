@@ -24,7 +24,7 @@ public class GelinkteLijst {
 	
 	
 	Node getFirst() {
-		return first;
+		return head;
 	}
 	
 	
