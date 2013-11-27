@@ -23,12 +23,12 @@ public class GelinkteLijst {
 	}
 	
 	
-	Node getFirst() {
-		return head;
+	Object getFirst() {
+		return head.data;
 	}
 	
 	
-	Node getLast() {
+	Object getLast() {
 		return null; // dummy
 	}	
 	

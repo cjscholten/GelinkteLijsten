@@ -35,7 +35,7 @@ public class Wachtrij {
 	 * Haal iets van de wachtrij
 	 * Aan de voorkant: FIFO
 	 */
-	void dequeue() {}
+	Object dequeue() {return null;}
 	
 	/**
 	 * Het aantal elementen in de wachtrij
