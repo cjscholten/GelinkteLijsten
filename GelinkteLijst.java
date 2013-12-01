@@ -19,53 +19,94 @@ public class GelinkteLijst {
 	private int size;
 	
 	
-	public GelinkteLijst() {
+	public GelinkteLijst() 
+	{
 	}
 	
 	
-	Object getFirst() {
-		return head.data;
+	Object getFirst() 
+	{
+		return head;
 	}
 	
 	
-	Object getLast() {
-		return null; // dummy
+	Object getLast() 
+	{		
+		Node last = head;
+		while(last.Node != null)
+		{
+			last = last.node;
+		}
+		return last;
 	}	
 	
 	/**
 	 * Voeg toe aan de voorkant
 	 */
-	void insertFirst(Object o) {}
+	void insertFirst(Object n) 
+	{
+		Node nNew = new Node(n.data, head);
+		head = nNew;
+		size++;
+	}
 
 	/**
 	 * Voeg toe aan de achterkant
 	 */
-	void insertLast(Object o) {}
+	void insertLast(Object n) 
+	{
+		getLast().node = n;
+	}
 	
 	/**
 	 * Voeg toe voor een ander element
 	 */
-	void insertBefore(Object o, Object before) {}
+	void insertBefore(Object n, Object before) 
+	{
+		Node zoek = head;
+		while(zoek.Node != before)
+		{
+			zoek = zoek.node;
+		}
+		n.node = zoek.node;
+		zoek.node = n;
+		size++;
+	}
 	
 	/**
 	 * Voeg toe na een ander element
 	 */
-	void insertAfter(Object o, Object after) {}
+	void insertAfter(Object n, Object after) 
+	{
+		n.node = after.node;
+		after.node = n;
+		size++;
+	}
 
 	
 	/**
 	 * Verwijder een element
 	 * @param data
 	 */
-	void remove(Object data) {}
+	void remove(Object data) 
+	{
+		Node zoek = head;
+		while(zoek.Node != data)
+		{
+			zoek = zoek.node;
+		}		
+		zoek.node = data.node;
+		size--;
+	}
 	
 	/**
 	 * 
 	 * @param current
 	 * @return
 	 */
-	boolean isFirst(Node current) {
-		return false; //dummy
+	boolean isFirst(Object current) 
+	{
+		return (current == head);
 	}
 	
 	
@@ -74,8 +115,9 @@ public class GelinkteLijst {
 	 * @param current
 	 * @return
 	 */
-	boolean isLast(Node current) {
-		return false; //dummy	
+	boolean isLast(Node current) 
+	{
+		return (current == getLast());	
 	}
 	
 	

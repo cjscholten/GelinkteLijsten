@@ -27,27 +27,40 @@ public class Wachtrij {
 	 * Zet iets in de wachtrij
 	 * aan de achterkant: FIFO
 	 */
-	void enqueue(Object o) {
-		lijst.insertFirst(o); //bijvoorbeeld zo	
+	void enqueue(Object o) 
+	{
+		lijst.insertLast(o); //bijvoorbeeld zo	
 	}
 	
 	/**
 	 * Haal iets van de wachtrij
 	 * Aan de voorkant: FIFO
 	 */
-	Object dequeue() {return null;}
+	Object dequeue() 
+	{
+		Object object = lijst.getFirst();
+		lijst.remove(object);
+		return object;
+		
+	}
 	
 	/**
 	 * Het aantal elementen in de wachtrij
 	 * @return
 	 */
-	int size() {return 0;}
+	int size() 
+	{
+		return lijst.GetSize();
+	}
 	
 	/**
 	 * Is de lijst leeg?
 	 * @return
 	 */
-	boolean isEmpty() {return false;}
+	boolean isEmpty() 
+	{
+		return lijst.getSize() > 0;
+	}
 	
 	/**
 	 * Bekijk het eerste element in de wachtrij, 
@@ -55,5 +68,8 @@ public class Wachtrij {
 	 * Note: het eerste element is als eerste toegevoegd.
 	 * @return
 	 */	
-	Object front() {return new Object();}
+	Object front() 
+	{
+		return lijst.getFirst();
+	}
 }
